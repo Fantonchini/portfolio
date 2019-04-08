@@ -66,9 +66,15 @@
   .about-container
     position: relative
     width: 100%
-    flex-grow: 1
     display: flex
     flex-direction: row
+    +tablet
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      flex-grow: 1
+      padding-top: 20px
+
   .about-container-left
     position: relative
     display: flex
@@ -78,17 +84,18 @@
     width: 50%
     padding: 195px 0 0 14.375%
     +large-desktop
-      padding-top: 0
       display: flex
       flex-direction: column
       justify-content: center
+      padding: 0 5% 0 7%
     +tablet
       width: 80%
-      padding-left: 0
+      padding: 0
       display: flex
-      flex-direction: row
+      flex-direction: column
       justify-content: center
       align-items: center
+
   .about-container-right
     position: relative
     padding-left: 6.8125%
@@ -96,17 +103,18 @@
     width: 50%
     height: 100%
     +large-desktop
-      padding-top: 0 
+      padding: 0 7% 0 5%
       display: flex
       flex-direction: column
       justify-content: center
     +tablet
       width: 80%
-      padding-left: 0
+      padding: 20px
       display: flex
       flex-direction: row
       justify-content: center
       align-items: center
+
   .about-plate-text
     z-index: 999
     position: relative
@@ -126,12 +134,13 @@
     +large-tablet
       font-size: 12px
       width: 85%
+
   .ring
     z-index: -1
-    top: 0%
-    left: 0%
-    right: 0%
-    bottom: 0%
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
     position: absolute
     margin: auto
     display: block
@@ -139,7 +148,14 @@
     height: 87px
     border-radius: 50%
     box-shadow: 0 0 0 3px rgba(52, 73, 94, .03), 0 0 0 48px #ECF0F1, 0 0 0 52px rgba(52, 73, 94, .03), 0 0 0 92px #ECF0F1, 0 0 0 97px rgba(52, 73, 94, .03), 0 0 0 142px #ECF0F1, 0 0 0 148px rgba(52, 73, 94, .03)
+    +large-desktop
+      transform: scale(0.9)
+    +tablet
+      display: none
+
   .plate-quotes
+    position: relative
+    z-index: 1000
     margin-bottom: 35px
     +large-desktop
       margin-bottom: 20px
@@ -150,19 +166,20 @@
       max-width: 26px
     +tablet
       margin: 0 16px 0 0
+
   .about-right-text-area
     z-index: 999
     width: 483px
+    overflow-y: scroll
     +large-desktop
-      width: 70%
-      height: 100%
-      display: flex
-      flex-direction: column
-      justify-content: center
+      width: 100%
+      height: 98%
+      display: block
     +large-tablet
-      width: 70%
+      width: 100%
     +tablet
       width: 100%
+
   .about-right-text
     z-index: 999
     font: 400 15px/21px 'Merriweather Sans', Tahoma, serif
@@ -179,13 +196,15 @@
     +large-tablet
       font-size: 12px
       line-height: 15px
+    +tablet
+      color: #34495E
 
   .background-ring
     position: absolute
-    top: 0%
-    left: 0%
-    right: 0%
-    bottom: 0%
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
     width: 197px
     height: 197px
     border-radius: 50%
@@ -193,4 +212,9 @@
     box-shadow: 0 0 0 3px rgba(236, 240, 241, .03), 0 0 0 92px #34495E, 0 0 0 98px rgba(236, 240, 241, .03), 0 0 0 186px #34495E, 0 0 0 194px rgba(236, 240, 241, .03), 0 0 0 290px #34495E, 0 0 0 299px rgba(236, 240, 241, .03)
     +large-desktop
       display: none
+    +tablet
+      box-shadow: 0 0 0 3px rgba(52, 73, 94, .03), 0 0 0 48px #ECF0F1, 0 0 0 52px rgba(52, 73, 94, .03), 0 0 0 92px #ECF0F1, 0 0 0 97px rgba(52, 73, 94, .03), 0 0 0 142px #ECF0F1, 0 0 0 148px rgba(52, 73, 94, .03)
+      display: block
+      transform: scale(0.8)
+      margin: auto auto
 </style>

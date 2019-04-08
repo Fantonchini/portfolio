@@ -96,13 +96,15 @@
   =mobile
     @media screen and (max-width: $mobile)
       @content
+
   .footer
     width: 100%
     display: flex
     flex-direction: row
     +tablet
       flex-direction: column
-        align-items: center
+      align-items: center
+
   .footer-left
     width: 50%
     display: flex
@@ -113,6 +115,7 @@
     +tablet
       width: 100%
       padding-bottom: 27px
+
   .footer-right
     width: 50%
     display: flex
@@ -123,20 +126,28 @@
     +tablet
       width: 100%
       padding-bottom: 27px
+
   .padding-right-side
     padding-left: 13.3125%
     +tablet
       padding-left: 0
+
   .left-side
     width: 50%
     background: #34495E
+
   .left-side-light
     background: #ECF0F1
+
   .menu
     text-align: center
+    position: relative
+    z-index: 1001
+
   .menu-list
     padding: 0
     margin: 0
+
   .menu-list-dark
     .menu-item
       .menu-link, .menu-list-dark .menu-item .menu-link:hover:before
@@ -177,6 +188,7 @@
     transform: rotate(-45deg)
     background: #34495E
     text-decoration: underline
+
   .social-list
     position: relative
     z-index: 999
@@ -192,6 +204,7 @@
           +tablet
             .about &
               color: #34495E
+
   .social-item
     display: inline-block
     margin-left: 22.5px
@@ -212,6 +225,7 @@
       color: #ECF0F1
       font-size: 14px
       line-height: 23px
+
   .social-list-dark
     .social-item
       .social-link
@@ -232,6 +246,7 @@
               color: #ECF0F1
             .contacts &
               color: #34495E
+
   .social-list-dark
     .social-item
       .social-link

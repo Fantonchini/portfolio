@@ -78,10 +78,13 @@ export default {
     box-sizing: border-box
     height: 100%
     min-height: 100%
+
   #__nuxt, #__layout
     height: 100%
+
   div 
     box-sizing: border-box
+
   #main-area
     height: 100%
     min-height: 100%
@@ -89,6 +92,15 @@ export default {
     display: flex
     justify-content: center
     align-items: center
+
+  .about
+    +tablet
+      height: auto !important
+
+  .product
+    +large-desktop
+      height: auto !important
+
   .container 
     position: relative
     background: linear-gradient(to right, #34495E 0%, #34495E 50%, #ECF0F1 50.01%, #ECF0F1 100%)
@@ -100,7 +112,6 @@ export default {
     justify-content: space-between
     align-items: center
     overflow: hidden
-
     +large-desktop
       height: 100%
       overflow-y: visible
@@ -113,6 +124,7 @@ export default {
         background: #ECF0F1
       .contacts &
         background: #ECF0F1
+
   .container-reverse 
     background: linear-gradient(to right, #ECF0F1 0%, #ECF0F1 50%, #34495E 50.01%, #34495E 100%)
 </style>

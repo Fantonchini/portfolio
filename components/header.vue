@@ -79,17 +79,21 @@ export default {
   @font-face
     font-family: Matura
     src: url('../static/MATURASC.TTF')
+
   .header
     width: 100%
     display: flex
     flex-direction: row
+    position: relative
+    z-index: 1010
+
   .header-left
     padding: 27px 0 0 14.375%
     width: 50%
-
     +tablet
       padding: 27px 0 0 0
       text-align: center
+
   .stamp
     text-decoration: none
     font-family: Matura, Tahoma, sans-serif
@@ -104,6 +108,7 @@ export default {
     padding-left: 13.3125%
     +tablet
       padding-left: 0
+
   .page-title
     display: block
     font: 800 12px/15px 'Merriweather Sans', Tahoma, serif
@@ -117,6 +122,7 @@ export default {
     +tablet
       .about &
         color: #34495E
+
   .page-title-dark
     color: #34495E
     +tablet
@@ -129,4 +135,5 @@ export default {
     position: relative
     z-index: 999
     color: #34495E
+
 </style>

@@ -52,6 +52,28 @@ export default {
 </script>
 
 <style lang="sass" scoped>
+  $large-desktop: 1600px
+  $small-desktop: 1200px
+  $large-tablet: 960px
+  $tablet: 768px
+  $mobile: 352px
+
+  =large-desktop
+    @media screen and (max-width: $large-desktop)
+      @content
+  =small-desktop
+    @media screen and (max-width: $small-desktop)
+      @content
+  =large-tablet
+    @media screen and (max-width: $large-tablet)
+      @content
+  =tablet
+    @media screen and (max-width: $tablet)
+      @content
+  =mobile
+    @media screen and (max-width: $mobile)
+      @content
+
   .contacts-container
     width: 100%
     flex-grow: 1
@@ -72,8 +94,10 @@ export default {
     justify-content: center
     width: 350px
     overflow: visible
+
   .left-side-padding
     padding-left: 8.875%
+
   .forms
     padding-left: 25px
     font: bold 14px/55px 'Open Sans', serif
@@ -107,21 +131,25 @@ export default {
 
   .forms:focus, a:focus
     outline: none
+
   .contacts-right
     width: 50%
     position: relative
+
   .form-submit-text
     position: relative
+
   .submit-img
     top: -10%
     left: 86%
     position: absolute
+
   #map
     z-index: 0
-    top: 0%
-    left: 0%
-    right: 0%
-    bottom: 0%
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
     margin-top: -75px
     position: absolute
     width: 100%

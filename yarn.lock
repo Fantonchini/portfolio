@@ -4202,6 +4202,13 @@ hmac-drbg@^1.0.0:
     minimalistic-assert "^1.0.0"
     minimalistic-crypto-utils "^1.0.1"
 
+hooper@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/hooper/-/hooper-0.1.2.tgz#7bd6a658b8b1c198d727a35c7c7faa3d44e26a81"
+  integrity sha512-TeVTuODxcgpH0J/pYaxxZiyMN4am0NVWv8AOdGENW5zX1/EdXSEUagJg9O1yO46urmKaGf7D4FbB1eTPlXByIA==
+  dependencies:
+    vue-server-renderer "^2.6.4"
+
 hoopy@^0.1.2:
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/hoopy/-/hoopy-0.1.4.tgz#609207d661100033a9a9402ad3dea677381c1b1d"
@@ -9159,7 +9166,7 @@ vue-router@^3.0.2:
   resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-3.0.2.tgz#dedc67afe6c4e2bc25682c8b1c2a8c0d7c7e56be"
   integrity sha512-opKtsxjp9eOcFWdp6xLQPLmRGgfM932Tl56U9chYTnoWqKxQ8M20N7AkdEbM5beUh6wICoFGYugAX9vQjyJLFg==
 
-vue-server-renderer@^2.6.10:
+vue-server-renderer@^2.6.10, vue-server-renderer@^2.6.4:
   version "2.6.10"
   resolved "https://registry.yarnpkg.com/vue-server-renderer/-/vue-server-renderer-2.6.10.tgz#cb2558842ead360ae2ec1f3719b75564a805b375"
   integrity sha512-UYoCEutBpKzL2fKCwx8zlRtRtwxbPZXKTqbl2iIF4yRZUNO/ovrHyDAJDljft0kd+K0tZhN53XRHkgvCZoIhug==
